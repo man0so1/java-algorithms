@@ -14,4 +14,15 @@ public class Assert {
     public static boolean assertEquals(String assertStr, String assumeStr) {
         return assertStr.equals(assumeStr);
     }
+
+    /**
+     * Функция для моментального вывода true или false
+     *
+     * @param assertStr строка, которую мы ожидаем
+     * @param assumeStr строка, которую мы проверяем
+     */
+    public static void print(String assertStr, String assumeStr) {
+        System.out.println(Assert.assertEquals(assertStr, assumeStr));
+    }
+
 }
