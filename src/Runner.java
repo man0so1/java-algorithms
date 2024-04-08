@@ -1,6 +1,7 @@
 import asserts.Assert;
 import strings.DefangingAnIPAddress;
 import strings.FinalValueOfVariableAfterPerformingOperations;
+import strings.JewelsAndStones;
 
 public class Runner {
     public static void main(String[] args) {
@@ -11,5 +12,9 @@ public class Runner {
         Assert.print(1, FinalValueOfVariableAfterPerformingOperations.finalValueAfterOperations(new String[] {"--X","X++","X++"}));
         Assert.print(3, FinalValueOfVariableAfterPerformingOperations.finalValueAfterOperations(new String[] {"++X","++X","X++"}));
         Assert.print(0, FinalValueOfVariableAfterPerformingOperations.finalValueAfterOperations(new String[] {"X++","++X","--X","X--"}));
+
+        // 771. Jewels and Stones
+        Assert.print(3, JewelsAndStones.numJewelsInStones("aA", "aAAbbbb"));
+        Assert.print(0, JewelsAndStones.numJewelsInStones("z", "ZZ"));
     }
 }
