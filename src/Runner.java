@@ -1,25 +1,26 @@
 import arrays.TimeNeededToBuyTickets;
 import asserts.Assert;
-import strings.DefangingAnIPAddress;
-import strings.FinalValueOfVariableAfterPerformingOperations;
-import strings.GoalParserInterpretation;
-import strings.JewelsAndStones;
+import strings.*;
 
 public class Runner {
     public static void main(String[] args) {
         // 1108. Defanging an IP Address
+        System.out.println("--- 1108. Defanging an IP Address ---");
         Assert.print("1[.]1[.]1[.]1", DefangingAnIPAddress.defangIPaddr("1.1.1.1"));
 
         // 2011. Final Value of Variable After Performing Operations
+        System.out.println("--- 2011. Final Value of Variable After Performing Operations ---");
         Assert.print(1, FinalValueOfVariableAfterPerformingOperations.finalValueAfterOperations(new String[]{"--X", "X++", "X++"}));
         Assert.print(3, FinalValueOfVariableAfterPerformingOperations.finalValueAfterOperations(new String[]{"++X", "++X", "X++"}));
         Assert.print(0, FinalValueOfVariableAfterPerformingOperations.finalValueAfterOperations(new String[]{"X++", "++X", "--X", "X--"}));
 
         // 771. Jewels and Stones
+        System.out.println("--- 771. Jewels and Stones ---");
         Assert.print(3, JewelsAndStones.numJewelsInStones("aA", "aAAbbbb"));
         Assert.print(0, JewelsAndStones.numJewelsInStones("z", "ZZ"));
 
         // 1678. Goal Parser Interpretation
+        System.out.println("--- 1678. Goal Parser Interpretation ---");
         Assert.print("Goal", GoalParserInterpretation.interpret("G()(al)"));
         Assert.print("Gooooal", GoalParserInterpretation.interpret("G()()()()(al)"));
         Assert.print("alGalooG", GoalParserInterpretation.interpret("(al)G(al)()()G"));
@@ -29,5 +30,16 @@ public class Runner {
         Assert.print(6, TimeNeededToBuyTickets.timeRequiredToBuy(new int[]{2, 3, 2}, 2));
         Assert.print(8, TimeNeededToBuyTickets.timeRequiredToBuy(new int[]{5, 1, 1, 1}, 0));
         Assert.print(4, TimeNeededToBuyTickets.timeRequiredToBuy(new int[]{1,2,3}, 1));
+
+        // 1221. Split a String in Balanced Strings
+        System.out.println("--- 1221. Split a String in Balanced Strings ---");
+        Assert.print(4, SplitStringInBalancedStrings.balancedStringSplit("RLRRLLRLRL"));
+        Assert.print(2, SplitStringInBalancedStrings.balancedStringSplit("RLRRRLLRLL"));
+        Assert.print(1, SplitStringInBalancedStrings.balancedStringSplit("LLLLRRRR"));
+
+        // 2114. Maximum Number of Words Found in Sentences
+        System.out.println("--- 2114. Maximum Number of Words Found in Sentences ---");
+        Assert.print(6, MaximumNumberOfWordsFoundInSentences.mostWordsFound(new String[] {"alice and bob love leetcode","i think so too","this is great thanks very much"}));
+        Assert.print(3, MaximumNumberOfWordsFoundInSentences.mostWordsFound(new String[] {"please wait","continue to fight","continue to win"}));
     }
 }
