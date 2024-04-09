@@ -1,6 +1,7 @@
 import asserts.Assert;
 import strings.DefangingAnIPAddress;
 import strings.FinalValueOfVariableAfterPerformingOperations;
+import strings.GoalParserInterpretation;
 import strings.JewelsAndStones;
 
 public class Runner {
@@ -16,5 +17,10 @@ public class Runner {
         // 771. Jewels and Stones
         Assert.print(3, JewelsAndStones.numJewelsInStones("aA", "aAAbbbb"));
         Assert.print(0, JewelsAndStones.numJewelsInStones("z", "ZZ"));
+
+        // 1678. Goal Parser Interpretation
+        Assert.print("Goal", GoalParserInterpretation.interpret("G()(al)"));
+        Assert.print("Gooooal", GoalParserInterpretation.interpret("G()()()()(al)"));
+        Assert.print("alGalooG", GoalParserInterpretation.interpret("(al)G(al)()()G"));
     }
 }
