@@ -2,6 +2,8 @@ import arrays.TimeNeededToBuyTickets;
 import asserts.Assert;
 import strings.*;
 
+import java.sql.Array;
+
 public class Runner {
     public static void main(String[] args) {
         // 1108. Defanging an IP Address
@@ -29,7 +31,7 @@ public class Runner {
         System.out.println("--- 2073. Time Needed to Buy Tickets ---");
         Assert.print(6, TimeNeededToBuyTickets.timeRequiredToBuy(new int[]{2, 3, 2}, 2));
         Assert.print(8, TimeNeededToBuyTickets.timeRequiredToBuy(new int[]{5, 1, 1, 1}, 0));
-        Assert.print(4, TimeNeededToBuyTickets.timeRequiredToBuy(new int[]{1,2,3}, 1));
+        Assert.print(4, TimeNeededToBuyTickets.timeRequiredToBuy(new int[]{1, 2, 3}, 1));
 
         // 1221. Split a String in Balanced Strings
         System.out.println("--- 1221. Split a String in Balanced Strings ---");
@@ -39,12 +41,16 @@ public class Runner {
 
         // 2114. Maximum Number of Words Found in Sentences
         System.out.println("--- 2114. Maximum Number of Words Found in Sentences ---");
-        Assert.print(6, MaximumNumberOfWordsFoundInSentences.mostWordsFound(new String[] {"alice and bob love leetcode","i think so too","this is great thanks very much"}));
-        Assert.print(3, MaximumNumberOfWordsFoundInSentences.mostWordsFound(new String[] {"please wait","continue to fight","continue to win"}));
+        Assert.print(6, MaximumNumberOfWordsFoundInSentences.mostWordsFound(new String[]{"alice and bob love leetcode", "i think so too", "this is great thanks very much"}));
+        Assert.print(3, MaximumNumberOfWordsFoundInSentences.mostWordsFound(new String[]{"please wait", "continue to fight", "continue to win"}));
 
         // 1816. Truncate Sentence
         System.out.println("--- 1816. Truncate Sentence ---");
         Assert.print("Hello how are you", TruncateSentence.truncateSentence("Hello how are you Contestant", 4));
         Assert.print("What is the solution", TruncateSentence.truncateSentence("What is the solution to this problem", 4));
+
+        // 1528. Shuffle String
+        System.out.println("--- 1528. Shuffle String ---");
+        Assert.print("leetcode", ShuffleString.restoreString("codeleet", new int[]{4, 5, 6, 7, 0, 2, 1, 3}));
     }
 }
