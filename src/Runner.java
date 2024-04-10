@@ -41,5 +41,10 @@ public class Runner {
         System.out.println("--- 2114. Maximum Number of Words Found in Sentences ---");
         Assert.print(6, MaximumNumberOfWordsFoundInSentences.mostWordsFound(new String[] {"alice and bob love leetcode","i think so too","this is great thanks very much"}));
         Assert.print(3, MaximumNumberOfWordsFoundInSentences.mostWordsFound(new String[] {"please wait","continue to fight","continue to win"}));
+
+        // 1816. Truncate Sentence
+        System.out.println("--- 1816. Truncate Sentence ---");
+        Assert.print("Hello how are you", TruncateSentence.truncateSentence("Hello how are you Contestant", 4));
+        Assert.print("What is the solution", TruncateSentence.truncateSentence("What is the solution to this problem", 4));
     }
 }
