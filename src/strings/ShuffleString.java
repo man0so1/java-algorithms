@@ -1,7 +1,5 @@
 package strings;
 
-import java.util.Arrays;
-
 /**
  * Задача на leetcode - 1528. Shuffle String
  *

@@ -52,5 +52,9 @@ public class Runner {
         // 1528. Shuffle String
         System.out.println("--- 1528. Shuffle String ---");
         Assert.print("leetcode", ShuffleString.restoreString("codeleet", new int[]{4, 5, 6, 7, 0, 2, 1, 3}));
+
+        // 2108. Find First Palindromic String in the Array
+        System.out.println("--- 2108. Find First Palindromic String in the Array ---");
+        Assert.print("ada", FindFirstPalindromicStringInTheArray.firstPalindrome(new String[]{"abc", "car", "ada", "racecar", "cool"}));
     }
 }
