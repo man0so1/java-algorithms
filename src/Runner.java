@@ -56,5 +56,9 @@ public class Runner {
         // 2108. Find First Palindromic String in the Array
         System.out.println("--- 2108. Find First Palindromic String in the Array ---");
         Assert.print("ada", FindFirstPalindromicStringInTheArray.firstPalindrome(new String[]{"abc", "car", "ada", "racecar", "cool"}));
+
+        // 1614. Maximum Nesting Depth of the Parentheses
+        System.out.println("--- 1614. Maximum Nesting Depth of the Parentheses ---");
+        Assert.print(3, MaximumNestingDepthOfTheParentheses.maxDepth("(1+(2*3)+((8)/4))+1"));
     }
 }
