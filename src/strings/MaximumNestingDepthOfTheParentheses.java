@@ -1,8 +1,5 @@
 package strings;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Задача на leetcode - 1614. Maximum Nesting Depth of the Parentheses
  *

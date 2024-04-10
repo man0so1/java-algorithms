@@ -2,7 +2,6 @@ import arrays.TimeNeededToBuyTickets;
 import asserts.Assert;
 import strings.*;
 
-import java.sql.Array;
 
 public class Runner {
     public static void main(String[] args) {
@@ -60,5 +59,9 @@ public class Runner {
         // 1614. Maximum Nesting Depth of the Parentheses
         System.out.println("--- 1614. Maximum Nesting Depth of the Parentheses ---");
         Assert.print(3, MaximumNestingDepthOfTheParentheses.maxDepth("(1+(2*3)+((8)/4))+1"));
+
+        // 709. To Lower Case
+        System.out.println("--- 709. To Lower Case ---");
+        Assert.print("hello", ToLowerCase.toLowerCase("Hello"));
     }
 }
