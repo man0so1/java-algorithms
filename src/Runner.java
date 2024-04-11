@@ -63,5 +63,9 @@ public class Runner {
         // 709. To Lower Case
         System.out.println("--- 709. To Lower Case ---");
         Assert.print("hello", ToLowerCase.toLowerCase("Hello"));
+
+        // 2810. Faulty Keyboard
+        System.out.println("--- 2810. Faulty Keyboard ---");
+        Assert.print("rtsng", FaultyKeyboard.finalString("string"));
     }
 }
