@@ -71,5 +71,9 @@ public class Runner {
         // 557. Reverse Words in a String III
         System.out.println("--- 557. Reverse Words in a String III ---");
         Assert.print("s'teL ekat edoCteeL tsetnoc", ReverseWordsinStringIII.reverseWords("Let's take LeetCode contest"));
+
+        // 2000. Reverse Prefix of Word
+        System.out.println("--- 2000. Reverse Prefix of Word ---");
+        Assert.print("dcbaefd", ReversePrefixOfWord.reversePrefix("abcdefd", 'd'));
     }
 }
