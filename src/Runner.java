@@ -1,3 +1,4 @@
+import arrays.NumberOfLaserBeamsInBank;
 import arrays.TimeNeededToBuyTickets;
 import asserts.Assert;
 import strings.*;
@@ -75,5 +76,9 @@ public class Runner {
         // 2000. Reverse Prefix of Word
         System.out.println("--- 2000. Reverse Prefix of Word ---");
         Assert.print("dcbaefd", ReversePrefixOfWord.reversePrefix("abcdefd", 'd'));
+
+        // 2125. Number of Laser Beams in a Bank
+        System.out.println("--- 2125. Number of Laser Beams in a Bank ---");
+        Assert.print(8, NumberOfLaserBeamsInBank.numberOfBeams(new String[]{"011001", "000000", "010100", "001000"}));
     }
 }
