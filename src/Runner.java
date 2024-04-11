@@ -67,5 +67,9 @@ public class Runner {
         // 2810. Faulty Keyboard
         System.out.println("--- 2810. Faulty Keyboard ---");
         Assert.print("rtsng", FaultyKeyboard.finalString("string"));
+
+        // 557. Reverse Words in a String III
+        System.out.println("--- 557. Reverse Words in a String III ---");
+        Assert.print("s'teL ekat edoCteeL tsetnoc", ReverseWordsinStringIII.reverseWords("Let's take LeetCode contest"));
     }
 }
