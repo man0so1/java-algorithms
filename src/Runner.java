@@ -80,5 +80,9 @@ public class Runner {
         // 2125. Number of Laser Beams in a Bank
         System.out.println("--- 2125. Number of Laser Beams in a Bank ---");
         Assert.print(8, NumberOfLaserBeamsInBank.numberOfBeams(new String[]{"011001", "000000", "010100", "001000"}));
+
+        // 1812. Determine Color of a Chessboard Square
+        System.out.println("--- 1812. Determine Color of a Chessboard Square ---");
+        System.out.println(DetermineColorOfChessboardSquare.squareIsWhite("a1"));
     }
 }
