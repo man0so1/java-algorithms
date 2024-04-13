@@ -89,5 +89,11 @@ public class Runner {
         System.out.println("--- 2129. Capitalize the Title ---");
         Assert.print("Capitalize The Title", CapitalizeTheTitle.capitalizeTitle("capiTalIze tHe TitLe"));
         Assert.print("First Letter of Each Word", CapitalizeTheTitle.capitalizeTitle("First leTTeR of EACH Word"));
+
+        // 3042. Count Prefix and Suffix Pairs I
+        System.out.println("--- 3042. Count Prefix and Suffix Pairs I ---");
+        Assert.print(4, CountPrefixAndSuffixPairsI.countPrefixSuffixPairs(new String[]{"a", "aba", "ababa", "aa"}));
+        Assert.print(2, CountPrefixAndSuffixPairsI.countPrefixSuffixPairs(new String[]{"pa", "papa", "ma", "mama"}));
+        Assert.print(0, CountPrefixAndSuffixPairsI.countPrefixSuffixPairs(new String[]{"abab", "ab"}));
     }
 }
