@@ -84,5 +84,10 @@ public class Runner {
         // 1812. Determine Color of a Chessboard Square
         System.out.println("--- 1812. Determine Color of a Chessboard Square ---");
         System.out.println(DetermineColorOfChessboardSquare.squareIsWhite("a1"));
+
+        // 2129. Capitalize the Title
+        System.out.println("--- 2129. Capitalize the Title ---");
+        Assert.print("Capitalize The Title", CapitalizeTheTitle.capitalizeTitle("capiTalIze tHe TitLe"));
+        Assert.print("First Letter of Each Word", CapitalizeTheTitle.capitalizeTitle("First leTTeR of EACH Word"));
     }
 }
