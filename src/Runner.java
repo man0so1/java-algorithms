@@ -1,3 +1,4 @@
+import arrays.NumberOfGoodPairs;
 import arrays.NumberOfLaserBeamsInBank;
 import arrays.TimeNeededToBuyTickets;
 import asserts.Assert;
@@ -95,5 +96,9 @@ public class Runner {
         Assert.print(4, CountPrefixAndSuffixPairsI.countPrefixSuffixPairs(new String[]{"a", "aba", "ababa", "aa"}));
         Assert.print(2, CountPrefixAndSuffixPairsI.countPrefixSuffixPairs(new String[]{"pa", "papa", "ma", "mama"}));
         Assert.print(0, CountPrefixAndSuffixPairsI.countPrefixSuffixPairs(new String[]{"abab", "ab"}));
+
+        // 1512. Number of Good Pairs
+        System.out.println("--- 1512. Number of Good Pairs ---");
+        Assert.print(4, NumberOfGoodPairs.numIdenticalPairs(new int[]{1, 2, 3, 1, 1, 3}));
     }
 }
