@@ -1,5 +1,6 @@
 import arrays.NumberOfGoodPairs;
 import arrays.NumberOfLaserBeamsInBank;
+import arrays.RichestCustomerWealth;
 import arrays.TimeNeededToBuyTickets;
 import asserts.Assert;
 import strings.*;
@@ -100,5 +101,9 @@ public class Runner {
         // 1512. Number of Good Pairs
         System.out.println("--- 1512. Number of Good Pairs ---");
         Assert.print(4, NumberOfGoodPairs.numIdenticalPairs(new int[]{1, 2, 3, 1, 1, 3}));
+
+        // 1672. Richest Customer Wealth
+        System.out.println("--- 1672. Richest Customer Wealth ---");
+        Assert.print(6, RichestCustomerWealth.maximumWealth(new int[][]{{1, 2, 3}, {3, 2, 1}}));
     }
 }
