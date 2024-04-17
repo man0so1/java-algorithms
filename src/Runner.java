@@ -1,7 +1,4 @@
-import arrays.NumberOfGoodPairs;
-import arrays.NumberOfLaserBeamsInBank;
-import arrays.RichestCustomerWealth;
-import arrays.TimeNeededToBuyTickets;
+import arrays.*;
 import asserts.Assert;
 import strings.*;
 
@@ -105,5 +102,9 @@ public class Runner {
         // 1672. Richest Customer Wealth
         System.out.println("--- 1672. Richest Customer Wealth ---");
         Assert.print(6, RichestCustomerWealth.maximumWealth(new int[][]{{1, 2, 3}, {3, 2, 1}}));
+
+        // 2798. Number of Employees Who Met the Target
+        System.out.println("--- 2798. Number of Employees Who Met the Target ---");
+        Assert.print(3, NumberEmployeesWhoMetTheTarget.numberOfEmployeesWhoMetTarget(new int[]{0, 1, 2, 3, 4}, 2));
     }
 }
