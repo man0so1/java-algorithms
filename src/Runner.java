@@ -106,5 +106,11 @@ public class Runner {
         // 2798. Number of Employees Who Met the Target
         System.out.println("--- 2798. Number of Employees Who Met the Target ---");
         Assert.print(3, NumberEmployeesWhoMetTheTarget.numberOfEmployeesWhoMetTarget(new int[]{0, 1, 2, 3, 4}, 2));
+
+        // 11. Container With Most Water
+        System.out.println("--- 11. Container With Most Water ---");
+        Assert.print(49, ContainerWithMostWater.maxArea(new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7}));
+        Assert.print(1, ContainerWithMostWater.maxArea(new int[]{1, 2}));
+        Assert.print(4, ContainerWithMostWater.maxArea(new int[]{1, 2, 4, 3}));
     }
 }
