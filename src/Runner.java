@@ -112,5 +112,9 @@ public class Runner {
         Assert.print(49, ContainerWithMostWater.maxArea(new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7}));
         Assert.print(1, ContainerWithMostWater.maxArea(new int[]{1, 2}));
         Assert.print(4, ContainerWithMostWater.maxArea(new int[]{1, 2, 4, 3}));
+
+        // 26. Remove Duplicates from Sorted Array
+        System.out.println("--- 26. Remove Duplicates from Sorted Array ---");
+        Assert.print(2, RemoveDuplicatesFromSortedArray.removeDuplicates(new int[]{1, 1, 2}));
     }
 }
