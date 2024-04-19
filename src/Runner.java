@@ -1,6 +1,7 @@
 import arrays.*;
 import asserts.Assert;
 import math.HarshadNumber;
+import math.Maximum69Number;
 import strings.*;
 
 import java.util.ArrayList;
@@ -129,5 +130,9 @@ public class Runner {
         System.out.println("--- 3099. Harshad Number ---");
         Assert.print(9, HarshadNumber.sumOfTheDigitsOfHarshadNumber(18));
         Assert.print(-1, HarshadNumber.sumOfTheDigitsOfHarshadNumber(23));
+
+        // 1323. Maximum 69 Number
+        System.out.println("--- 1323. Maximum 69 Number ---");
+        Assert.print(9969, Maximum69Number.maximum69Number(9669));
     }
 }
