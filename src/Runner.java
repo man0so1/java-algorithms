@@ -2,6 +2,9 @@ import arrays.*;
 import asserts.Assert;
 import strings.*;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 
 public class Runner {
     public static void main(String[] args) {
@@ -116,5 +119,9 @@ public class Runner {
         // 26. Remove Duplicates from Sorted Array
         System.out.println("--- 26. Remove Duplicates from Sorted Array ---");
         Assert.print(2, RemoveDuplicatesFromSortedArray.removeDuplicates(new int[]{1, 1, 2}));
+
+        // 2824. Count Pairs Whose Sum is Less than Target
+        System.out.println("--- 2824. Count Pairs Whose Sum is Less than Target ---");
+        Assert.print(3, CountPairsWhoseSumLessThanTarget.countPairs(new ArrayList<>(Arrays.asList(-1,1,2,3,1)), 2));
     }
 }
