@@ -1,5 +1,6 @@
 import arrays.*;
 import asserts.Assert;
+import math.HarshadNumber;
 import strings.*;
 
 import java.util.ArrayList;
@@ -123,5 +124,10 @@ public class Runner {
         // 2824. Count Pairs Whose Sum is Less than Target
         System.out.println("--- 2824. Count Pairs Whose Sum is Less than Target ---");
         Assert.print(3, CountPairsWhoseSumLessThanTarget.countPairs(new ArrayList<>(Arrays.asList(-1,1,2,3,1)), 2));
+
+        // 3099. Harshad Number
+        System.out.println("--- 3099. Harshad Number ---");
+        Assert.print(9, HarshadNumber.sumOfTheDigitsOfHarshadNumber(18));
+        Assert.print(-1, HarshadNumber.sumOfTheDigitsOfHarshadNumber(23));
     }
 }
