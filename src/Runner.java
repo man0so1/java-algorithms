@@ -134,5 +134,7 @@ public class Runner {
         // 1323. Maximum 69 Number
         System.out.println("--- 1323. Maximum 69 Number ---");
         Assert.print(9969, Maximum69Number.maximum69Number(9669));
+
+        // TODO написать настройку работы github actions для тестирований новых решений
     }
 }
