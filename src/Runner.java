@@ -123,7 +123,7 @@ public class Runner {
 
         // 2824. Count Pairs Whose Sum is Less than Target
         System.out.println("--- 2824. Count Pairs Whose Sum is Less than Target ---");
-        Assert.print(3, CountPairsWhoseSumLessThanTarget.countPairs(new ArrayList<>(Arrays.asList(-1,1,2,3,1)), 2));
+        Assert.print(3, CountPairsWhoseSumLessThanTarget.countPairs(new ArrayList<>(Arrays.asList(-1, 1, 2, 3, 1)), 2));
 
         // 3099. Harshad Number
         System.out.println("--- 3099. Harshad Number ---");
@@ -133,6 +133,14 @@ public class Runner {
         // 1323. Maximum 69 Number
         System.out.println("--- 1323. Maximum 69 Number ---");
         Assert.print(9969, Maximum69Number.maximum69Number(9669));
+
+        // 1351. Count Negative Numbers in a Sorted Matrix
+        System.out.println("--- 1351. Count Negative Numbers in a Sorted Matrix ---");
+        Assert.print(8,
+                CountNegativeNumbersInSortedMatrix.countNegatives(
+                        new int[][]{{4, 3, 2, -1}, {3, 2, 1, -1}, {1, 1, -1, -2}, {-1, -1, -2, -3}}
+                )
+        );
 
         // TODO написать настройку работы github actions для тестирований новых решений
     }
